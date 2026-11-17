@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Q2 Skills Test</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Redaction+35:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+
+    body{
+        background-image:url('https://i.pinimg.com/1200x/51/15/c5/5115c56c5e587df42a6b3cb8fac286e6.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    #MainBox{
+        height:500px;
+        width:500px;
+        border-left:20px solid #EFA7A7;
+        background-color: #ffd9725b;
+        border-radius:20px;
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:50px;
+        box-shadow: 5px 5px 5px #c17f7f;
+        font-family:Gill Sans, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #763043;
+    }
+
+    .container-fluid{
+          background-color: #cf4d7092;
+          border-bottom: 5px solid rgba(255, 255, 255, 0.751);
+          font-family: 'Redaction 35', serif;
+          color:white;
+          font-size:20px;
+        }
+
+    #TitleBox{
+          text-align: center;
+          background-color: #cf4d7092;
+          padding:25px;
+          border-left: 20px solid #ffe5d9d9;
+          border-radius:50px;
+          color: white;
+          font-family: 'Redaction 35', serif; 
+          border-radius: 0px 20px 20px 0px;
+          box-shadow: 5px 5px 5px #a76e6e;
+            
+        }
+      
+      #element{
+          background-color:rgb(255, 226, 226);
+          border-radius:30px;
+          width:300px;
+          border:rgb(255, 226, 226);
+          padding:8px;
+          box-shadow:2px 2px 2px pink;
+          font-family:Gill Sans, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+
+</style>
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-sm navbar-light">
+
+    <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+
+      <ul class="navbar-nav me-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">SW1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills Test</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="DRILL2.html">Drill 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="creator.html">About Me</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+
+
+    <div id="TitleBox">
+        <h1>Nonmetals Checker</h1>
+    </div>
+
+    <div id="MainBox">
+    <br>
+    <h1 style ="font-family: 'Redaction 35' ,serif; margin-top:40px;">Enter your nonmetallic element symbol</h1>
+
+    <input type="text" id="element" placeholder="Enter element symbol" style="border-radius:30px; box-shadow:#c17f7f 2px 2px 2px;">
+    <hr>
+    <input type="button" py-click="search_element" value="Search" class="btn btn-success">
+    <input type="button" onclick="window.location.reload()" value="Cancel" class="btn btn-danger">
+
+    <hr>
+
+
+    <div id="result">
+        <h3>Your Results:</h3>
+        <p><b>Element Symbol:</b> <span id="symbol"></span></p>
+        <p><b>Element Name:</b> <span id="name"></span></p>
+        <p><b>Element Atomic Number:</b> <span id="atomic_number"></span></p>
+        <p><b>Element Atomic Mass:</b> <span id="atomic_mass"></span></p>
+
+    </div>
+
+
+    <script type="py" src="main.py"></script>
+
+    </div>
+    
+</body>
+</html>
